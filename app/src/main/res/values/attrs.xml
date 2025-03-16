@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PieChartView">
+        <attr name="angle" format="integer" />
+        <attr name="baseColor" format="color" />
+        <attr name="highlightColor" format="color" />
+        <attr name="maxValue" format="float" />
+        <attr name="progress" format="float" />
+        <attr name="showLabel" format="boolean" />
+        <attr name="labelNum" format="integer" />
+        <attr name="labelUnit" format="string" />
+        <attr name="labelLineColor" format="color" />
+        <attr name="labelTextColor" format="color" />
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="showAngleText" format="boolean" />
+
+    </declare-styleable>
+
+</resources>
