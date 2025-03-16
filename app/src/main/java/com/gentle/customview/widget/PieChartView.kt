@@ -10,7 +10,6 @@ import android.view.View
 import androidx.annotation.FloatRange
 import androidx.annotation.IntRange
 import androidx.core.content.withStyledAttributes
-import androidx.core.util.TypedValueCompat.dpToPx
 import com.gentle.customview.R
 
 class PieChartView @JvmOverloads constructor(
@@ -223,30 +222,6 @@ class PieChartView @JvmOverloads constructor(
                 // 绘制文本
                 canvas.drawText(label, textX, textY, labelTextPaint)
             }
-//            val lineRadii = listOf(radius / 3f, 2 * radius / 3f, radius)
-//            val labels = listOf("10ft", "20ft", "30ft")
-//            for ((index, lineRadius) in lineRadii.withIndex()) {
-//                if (index != lineRadii.lastIndex) {
-//                    val lineRectF = RectF(
-//                        centerX - lineRadius,
-//                        centerY - lineRadius,
-//                        centerX + lineRadius,
-//                        centerY + lineRadius
-//                    )
-//                    canvas.drawArc(lineRectF, startAngle, chartAngle, false, labelLinePaint)
-//                }
-//
-//                // 计算文本位置
-//                labelTextPaint.getTextBounds(labels[index], 0, labels[index].length, textBoundsRect)
-//                val textWidth = textBoundsRect.width()
-//                val textHeight = textBoundsRect.height()
-//
-//                val textX = centerX - textWidth / 2f
-//                val textY = centerY - lineRadius + textHeight + labelTextMargin
-//
-//                // 绘制文本
-//                canvas.drawText(labels[index], textX, textY, labelTextPaint)
-//            }
         }
 
         if (showAngleText) {
