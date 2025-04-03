@@ -19,5 +19,4 @@
     app:showAngleText="true"
     app:labelTextSize="12sp"
     android:background="#CCCCCC" />
-
 ````
